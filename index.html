@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Relogio Funcionando</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/javascript" href="relogio.js">
+	<link rel="stylesheet" type="text/javascript" href="ponteiros.js">
+	<link rel="icon" href="relogio.jpg" type="image/jpg">
+</head>
+<body>
+
+	<div class="circ"></div>
+	<img src="relogio.jpg">
+	<div id="ponteiro-hora"></div>
+	<div id="ponteiro-minuto"></div>
+	<div id="ponteiro-segundo"></div>
+	<div id="data-hora"></div>
+	<h1>RELÓGIO FUNCIONANDO DESDE: <div id="hora-agora"style="display: contents;"></div></h1>
+
+		<script type="text/javascript" src="ponteiros.js"></script>
+		<script>
+			// Função para formatar 1 em 01
+			const zeroFill = n => {
+				return ('0' + n).slice(-2);
+			}
+
+			// Cria intervalo
+			const interval = setInterval(() => {
+				// Pega o horário atual
+				const now = new Date();
+
+				// Formata a data conforme hh:ii:ss
+				const dataHora = zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+
+				// Exibe na tela usando a div#data-hora
+				document.getElementById('data-hora').innerHTML = dataHora;
+			}, 1000);
+
+				const agora = new Date();
+
+				const horaAgora = zeroFill(agora.getHours()) + ':' + zeroFill(agora.getMinutes());
+
+				document.getElementById('hora-agora').innerHTML = horaAgora;
+			
+
+		</script>
+
+</body>
+</html>
