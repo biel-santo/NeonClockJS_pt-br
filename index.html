@@ -3,6 +3,7 @@
 <head>
 	<title>Relogio Funcionando</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="num.css">
 	<link rel="stylesheet" type="text/javascript" href="relogio.js">
 	<link rel="stylesheet" type="text/javascript" href="ponteiros.js">
 	<link rel="icon" href="relogio.jpg" type="image/jpg">
@@ -10,12 +11,26 @@
 <body>
 
 	<div class="circ"></div>
-	<img src="relogio.jpg">
+	<div class="relogio">
+		<div id="r1">1</div>
+		<div id="r2">2</div>
+		<div id="r3">3</div>
+		<div id="r4">4</div>
+		<div id="r5">5</div>
+		<div id="r6">6</div>
+		<div id="r7">7</div>
+		<div id="r8">8</div>
+		<div id="r9">9</div>
+		<div id="r10">10</div>
+		<div id="r11">11</div>
+		<div id="r12">12</div>
+	</div>
+
 	<div id="ponteiro-hora"></div>
 	<div id="ponteiro-minuto"></div>
 	<div id="ponteiro-segundo"></div>
-	<div id="data-hora"></div>
-	<h1>RELÓGIO FUNCIONANDO DESDE: <div id="hora-agora"style="display: contents;"></div></h1>
+	<div id="data-hora" class="neon"></div>
+	<footer>RELÓGIO FUNCIONANDO DESDE: <div id="hora-agora"style="display: contents;"></div></footer>
 
 		<script type="text/javascript" src="ponteiros.js"></script>
 		<script>
