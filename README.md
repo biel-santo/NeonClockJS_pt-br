@@ -1,3 +1,3 @@
 # ClockJS_pt-br
 
-https://www.youtube.com/c/AlexandreFlausinodaMotta
+Isso é só uma brincadeira com ângulos e neon
